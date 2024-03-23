@@ -16,9 +16,8 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-func Lissajous(out io.Writer) {
+func Lissajous(out io.Writer, cycles float64) {
 	const (
-		cycles = 5
 		// number of complete x oscillator revolutions
 		res  = 0.001 // angular resolution
 		size = 100
